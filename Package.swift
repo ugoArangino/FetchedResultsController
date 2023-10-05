@@ -4,6 +4,9 @@ import PackageDescription
 
 let package = Package(
     name: "FetchedResultsController",
+    platforms: [
+        .iOS(.v17),
+    ],
     products: [
         .library(
             name: "FetchedResultsController",
@@ -12,10 +15,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "FetchedResultsController"),
-        .testTarget(
-            name: "FetchedResultsControllerTests",
-            dependencies: ["FetchedResultsController"]
+            name: "FetchedResultsController"
         ),
     ]
 )
