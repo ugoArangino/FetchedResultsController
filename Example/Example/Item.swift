@@ -2,7 +2,8 @@ import Foundation
 import SwiftData
 
 @Model
-final class Item {
+class Item {
+    var name: String = UUID().uuidString
     var timestamp: Date
 
     init(timestamp: Date) {

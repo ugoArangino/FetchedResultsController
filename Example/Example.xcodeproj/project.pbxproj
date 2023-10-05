@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F2BB3AF2ACF7A69006EF619 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2BB3AE2ACF7A69006EF619 /* Item.swift */; };
 		1F5BAA992ACF7440007CB8BE /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BAA982ACF7440007CB8BE /* ExampleApp.swift */; };
 		1F5BAA9B2ACF7440007CB8BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BAA9A2ACF7440007CB8BE /* ContentView.swift */; };
-		1F5BAA9D2ACF7440007CB8BE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BAA9C2ACF7440007CB8BE /* Item.swift */; };
 		1F5BAA9F2ACF7441007CB8BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F5BAA9E2ACF7441007CB8BE /* Assets.xcassets */; };
 		1F5BAAA22ACF7441007CB8BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F5BAAA12ACF7441007CB8BE /* Preview Assets.xcassets */; };
+		1F5BAAAB2ACF7527007CB8BE /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BAAA92ACF7527007CB8BE /* ViewModel.swift */; };
+		1F5BAAAF2ACF7559007CB8BE /* FetchedResultsController in Frameworks */ = {isa = PBXBuildFile; productRef = 1F5BAAAE2ACF7559007CB8BE /* FetchedResultsController */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F2BB3AE2ACF7A69006EF619 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		1F5BAA952ACF7440007CB8BE /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5BAA982ACF7440007CB8BE /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
 		1F5BAA9A2ACF7440007CB8BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		1F5BAA9C2ACF7440007CB8BE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		1F5BAA9E2ACF7441007CB8BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F5BAAA12ACF7441007CB8BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1F5BAAA92ACF7527007CB8BE /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		1F5BAAAC2ACF7555007CB8BE /* FetchedResultsController */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FetchedResultsController; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F5BAAAF2ACF7559007CB8BE /* FetchedResultsController in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,8 @@
 			isa = PBXGroup;
 			children = (
 				1F5BAA972ACF7440007CB8BE /* Example */,
+				1F5BAAAC2ACF7555007CB8BE /* FetchedResultsController */,
+				1F5BAAAD2ACF7559007CB8BE /* Frameworks */,
 				1F5BAA962ACF7440007CB8BE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,11 +60,12 @@
 		1F5BAA972ACF7440007CB8BE /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				1F5BAA982ACF7440007CB8BE /* ExampleApp.swift */,
-				1F5BAA9A2ACF7440007CB8BE /* ContentView.swift */,
-				1F5BAA9C2ACF7440007CB8BE /* Item.swift */,
 				1F5BAA9E2ACF7441007CB8BE /* Assets.xcassets */,
+				1F5BAA9A2ACF7440007CB8BE /* ContentView.swift */,
+				1F5BAA982ACF7440007CB8BE /* ExampleApp.swift */,
+				1F2BB3AE2ACF7A69006EF619 /* Item.swift */,
 				1F5BAAA02ACF7441007CB8BE /* Preview Content */,
+				1F5BAAA92ACF7527007CB8BE /* ViewModel.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -68,6 +76,13 @@
 				1F5BAAA12ACF7441007CB8BE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1F5BAAAD2ACF7559007CB8BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +101,9 @@
 			dependencies = (
 			);
 			name = Example;
+			packageProductDependencies = (
+				1F5BAAAE2ACF7559007CB8BE /* FetchedResultsController */,
+			);
 			productName = Example;
 			productReference = 1F5BAA952ACF7440007CB8BE /* Example.app */;
 			productType = "com.apple.product-type.application";
@@ -140,8 +158,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F2BB3AF2ACF7A69006EF619 /* Item.swift in Sources */,
+				1F5BAAAB2ACF7527007CB8BE /* ViewModel.swift in Sources */,
 				1F5BAA9B2ACF7440007CB8BE /* ContentView.swift in Sources */,
-				1F5BAA9D2ACF7440007CB8BE /* Item.swift in Sources */,
 				1F5BAA992ACF7440007CB8BE /* ExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,10 +292,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Example/Preview Content\"";
-				DEVELOPMENT_TEAM = 2PDJ885YC9;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -289,8 +308,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.ugoarangino.FetchedResultsController.example.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = de.ugoarangino.FetchedResultsController.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,10 +322,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Example/Preview Content\"";
-				DEVELOPMENT_TEAM = 2PDJ885YC9;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -318,8 +338,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.ugoarangino.FetchedResultsController.example.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = de.ugoarangino.FetchedResultsController.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -348,6 +369,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F5BAAAE2ACF7559007CB8BE /* FetchedResultsController */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FetchedResultsController;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1F5BAA8D2ACF7440007CB8BE /* Project object */;
 }
